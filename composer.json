@@ -1,0 +1,25 @@
+{
+  "name": "exa2040/laravel-view-counter",
+  "description": "A view and like counter extension for your laravel project.",
+  "license": "MIT",
+  "homepage": "https://github.com/ExA2040/ViewCounter",
+  "keywords": [ "counter", "likes", "views" ],
+  "authors": [
+    {
+      "name": "Ehsan Alinezhad",
+      "email": "Ehsan_Alinezhad@ymail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/support": "5.3.*"
+  },
+  "autoload": {
+    "classmap": [
+      "src"
+    ],
+    "psr-4": {
+      "ExA2040\\LaravelViewCounter\\": "src/"
+    }
+  }
+}
