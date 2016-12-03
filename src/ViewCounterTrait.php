@@ -4,7 +4,7 @@ namespace ExA2040\LaravelViewCounter;
 
 trait ViewCounterTrait {
 
-  /**
+  /** 
    * Return the most liked content
    *
    * @return Integer
