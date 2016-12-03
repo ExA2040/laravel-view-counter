@@ -55,7 +55,7 @@ class ViewCounterServiceProvider extends LaravelServiceProvider {
   private function handleViews() {
     $this->loadViewsFrom('packagename', __DIR__.'/../views');
     $this->publishes([
-      __DIR__.'/../views' => base_path('resources/views/exa2040/view-counter')
+      __DIR__.'/../views' => base_path('resources/views/exa2040/laravel-view-counter')
     ]);
   }
 
