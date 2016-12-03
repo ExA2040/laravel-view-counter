@@ -34,7 +34,7 @@ class ViewCounterServiceProvider extends LaravelServiceProvider {
   public function register()
   {
     include __DIR__.'/Http/routes.php';
-    $this->app->make('ExA2040\ViewCounter\LikeController');
+    $this->app->make('ExA2040\LaravelViewCounter\LikeController');
   }
 
   /**

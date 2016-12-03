@@ -18,7 +18,7 @@ While the package is not stable, please make sure you added it as dev: Open "com
 Add the service provider in `app/config/app.php`:
 
 ```php
-ExA2040\ViewCounter\ViewCounterServiceProvider::class,
+ExA2040\LaravelViewCounter\ViewCounterServiceProvider::class,
 ```
 
 The service provider will register an interface for your models to use view_counter and like_couter functionality.
@@ -41,7 +41,7 @@ Now you can register the like and view functionality in your model:
 
 ```php
 class Object extends Eloquent {
-  use ExA2040\ViewCounter\ViewCounterTrait;
+  use ExA2040\LaravelViewCounter\ViewCounterTrait;
 }
 ```
 
