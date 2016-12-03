@@ -4,7 +4,7 @@ namespace ExA2040\LaravelViewCounter;
 
 trait ViewCounterTrait {
 
-  /** 
+  /**
    * Return the most liked content
    *
    * @return Integer
@@ -30,12 +30,12 @@ trait ViewCounterTrait {
 
   public function counter()
   {
-    return $this->hasOne('\ExA2040\ViewCounter\Counter', 'object_id')->where('class_name', snake_case(get_class($this)));
+    return $this->hasOne('\ExA2040\LaravelViewCounter\Counter', 'object_id')->where('class_name', snake_case(get_class($this)));
   }
 
   public function user_counters()
   {
-    return $this->hasMany('\ExA2040\ViewCounter\UserCounter', 'object_id')->where('class_name', snake_case(get_class($this)));
+    return $this->hasMany('\ExA2040\LaravelViewCounter\UserCounter', 'object_id')->where('class_name', snake_case(get_class($this)));
   }
 
   /**
@@ -76,7 +76,7 @@ trait ViewCounterTrait {
       if(!isset($this->counter))
       {
         $class_name = snake_case(get_class($this));
-        \ExA2040\ViewCounter\Counter::firstOrCreate(array('class_name' => $class_name, 'object_id' => $this->id));
+        \ExA2040\LaravelViewCounter\Counter::firstOrCreate(array('class_name' => $class_name, 'object_id' => $this->id));
       }
       $this->counter()->increment('view_counter');
       return true;
