@@ -1,6 +1,6 @@
 <?php
 
-namespace ExA2040\LaravelViewCounter;
+namespace ExA2040\ViewCounter;
 
 use Illuminate\Routing\Controller as BaseController;
 
