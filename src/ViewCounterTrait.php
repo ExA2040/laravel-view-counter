@@ -91,7 +91,7 @@ trait ViewCounterTrait {
    */
   public function views_count()
   {
-    return $this->counter->view_counter;
+    return !empty($this->counter->view_counter)?$this->counter->view_counter:0;
   }
 
   /**
